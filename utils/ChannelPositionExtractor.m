@@ -19,9 +19,10 @@ if ~isempty(strfind(KWIKfile,'result'))
 %     temp = subdir(fullfile(a,'*.params'));
     temp = subdir([a,filesep,b(1:strfind(b,'.')),'params']);
 
-    
     % Figure out which probe file to read
     pfile = strtrim(GetProbeFile(temp.name));
+    [~,b] = fileparts(pfile);
+    pfile = ['probes',filesep,b,'.prb'];
     pdata = importdata(pfile);
     ch_line = strsplit(cell2mat(pdata(cellfun(@(IDX) ~isempty(IDX), strfind(pdata, 'total_nb_channels')))),'= ');
     nchannels = str2num(ch_line{2});

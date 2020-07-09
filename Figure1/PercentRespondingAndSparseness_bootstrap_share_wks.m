@@ -6,8 +6,8 @@ clc
 % turn on Essentials
 
 %% Pick out files with 'kwik' in its name and put each in one cell
-% Catalog = 'Z:\expt_sets\catalogs\AK2\ExperimentCatalog_bulb_awk_kx_F.txt';
-Catalog = 'Z:\expt_sets\catalogs\AK2\ExperimentCatalog_pcx_awk_kx_F.txt';
+% Catalog = 'ExperimentCatalog_bulb_awk_kx_share.txt';
+Catalog = 'ExperimentCatalog_pcx_awk_kx_share.txt';
 T = readtable(Catalog, 'Delimiter', ' ');
 KWIKfiles = T.kwikfile(logical(T.include));
 Kindex = find(T.include);

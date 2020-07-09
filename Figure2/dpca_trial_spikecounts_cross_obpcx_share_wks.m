@@ -2,8 +2,8 @@ clearvars
 close all
 clc
 
-Catalog = 'Z:\expt_sets\catalogs\AK2\ExperimentCatalog_bulb_awk_kx_F.txt';
-% Catalog = 'Z:\expt_sets\catalogs\AK2\ExperimentCatalog_pcx_awk_kx_F.txt';
+% Catalog = 'ExperimentCatalog_bulb_awk_kx_share.txt';
+Catalog = 'ExperimentCatalog_pcx_awk_kx_share.txt';
 
 BinSize = [0.5];
 PST = [0 .5];

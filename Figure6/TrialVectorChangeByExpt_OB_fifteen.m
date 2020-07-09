@@ -3,8 +3,7 @@ close all
 clc
 
 %% Parameters
-%% PCX original data
-Catalog = 'Z:\expt_sets\catalogs\AK2\ExperimentCatalog_bulb_awk_kx_F.txt';
+Catalog = 'ExperimentCatalog_bulb_awk_kx_share.txt';
 moff = 1;
 normtodiff = 0;
 

@@ -2,10 +2,9 @@ clearvars
 close all
 clc
 
-%% Pick out files with 'kwik' in its name and put each in one cell
-Catalog = 'Z:\expt_sets\catalogs\AK2\ExperimentCatalog_bulb_awk_kx_F.txt'; 
-% Catalog = 'Z:\expt_sets\catalogs\AK2\ExperimentCatalog_pcx_awk_kx_F.txt';
-% % expt 11 -> 4
+%% choose a set of recordings
+% Catalog = 'ExperimentCatalog_bulb_awk_kx_share.txt';
+Catalog = 'ExperimentCatalog_pcx_awk_kx_share.txt';
 
 specialparams.FRlim = 1/100;
 specialparams.UVlim = 50;
@@ -20,7 +19,6 @@ Kindex = find(T.include);
 %%
 PST = [0, 0.5];
 
-% for k = [7,10,12]%:length(KWIKfiles)
 for k = 1:length(KWIKfiles)
     
     

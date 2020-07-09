@@ -4,7 +4,8 @@ clc
 
 %% Parameters
 %% PCX original data
-Catalog = 'Z:\expt_sets\catalogs\AK2\ExperimentCatalog_pcx_awk_kx_F.txt';
+Catalog = 'ExperimentCatalog_pcx_awk_kx_share.txt';
+
 moff = 1;
 normtodiff = 0;
 
@@ -140,7 +141,7 @@ for rewi = 1:2
 end
 
 %%
-Catalog = 'Z:\expt_sets\catalogs\AK2\ExperimentCatalog_KX_Ntng_F.txt';
+Catalog = 'ExperimentCatalog_ntng_kx_share.txt';
 moff = 1;
 normtodiff = 0;
 clear ndccn pccn

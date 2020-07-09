@@ -3,11 +3,10 @@ close all
 clc
 
 for region = 1:2
-    %% Pick out files with 'kwik' in its name and put each in one cell
     if region == 1
-        Catalog = 'Z:\expt_sets\catalogs\AK2\ExperimentCatalog_bulb_awk_kx_F.txt';
+        Catalog = 'ExperimentCatalog_bulb_awk_kx_share.txt';
     else
-        Catalog = 'Z:\expt_sets\catalogs\AK2\ExperimentCatalog_pcx_awk_kx_F.txt';
+        Catalog = 'ExperimentCatalog_pcx_awk_kx_share.txt';
     end
     T = readtable(Catalog, 'Delimiter', ' ');
     KWIKfiles = T.kwikfile(logical(T.include));

@@ -8,10 +8,10 @@ specialparams.DFRlim = 100;
 
 statelist = ['a','k'];
 
-Catalog = 'Z:\expt_sets\catalogs\AK2\ExperimentCatalog_pcx_awk_kx_F.txt';
+Catalog = 'ExperimentCatalog_pcx_awk_kx_share.txt';
 [TypeIdx_p, ~] = CellTyper (Catalog, 'Stable', specialparams);
 
-Catalog = 'Z:\expt_sets\catalogs\AK2\ExperimentCatalog_bulb_awk_kx_F_sim.txt';
+Catalog = 'ExperimentCatalog_bulb_awk_kx_sim_share.txt';
 [TypeIdx_b, ~] = CellTyper (Catalog, 'Stable', specialparams);
 
 

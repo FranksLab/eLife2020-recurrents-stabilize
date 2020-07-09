@@ -3,11 +3,10 @@ close all
 clc
 
 %% Parameters
-%% PCX original data
-Catalog = 'Z:\expt_sets\catalogs\AK2\ExperimentCatalog_pcx_awk_kx_telc_stabletrials.txt';
+Catalog = 'ExperimentCatalog_pcx_awk_kx_telc_share.txt'; % TeLC-infected
 rset{1} = [2,4,5,6];
 
-% Catalog = 'Z:\expt_sets\catalogs\AK2\ExperimentCatalog_pcx_awk_kx_telcontrol_stabletrials.txt';
+% Catalog = 'ExperimentCatalog_pcx_awk_kx_telcontrol_share.txt'; % control hemisphere
 % rset{1} = [1:4];
 
 moff = 1;
